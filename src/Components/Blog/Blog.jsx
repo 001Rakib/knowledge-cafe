@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import { BsFillBookmarkHeartFill } from "react-icons/bs";
-const Blog = ({ blog }) => {
+const Blog = ({ blog, handleAddToBookmark, handleMarkAsRead }) => {
   const {
     Title,
     Cover,
@@ -10,9 +10,9 @@ const Blog = ({ blog }) => {
     Posted_Date,
     Hashtags,
   } = blog;
-  console.log(blog);
+
   return (
-    <div className="mb-20">
+    <div className="mb-20 space-y-4">
       <img
         className="w-full mb-8 rounded-md"
         src={Cover}
@@ -28,7 +28,10 @@ const Blog = ({ blog }) => {
         </div>
         <div className="flex items-center">
           <span>{Reading_Time} Min Read</span>
-          <button className="ml-2 text-blue-700 text-xl">
+          <button
+            onClick={() => handleAddToBookmark(blog)}
+            className="ml-2 text-blue-700 text-xl"
+          >
             <BsFillBookmarkHeartFill></BsFillBookmarkHeartFill>
           </button>
         </div>
@@ -41,10 +44,18 @@ const Blog = ({ blog }) => {
           </span>
         ))}
       </p>
+      <button
+        onClick={() => handleMarkAsRead(Reading_Time)}
+        className="text-blue-700 underline font-bold"
+      >
+        Mark As Read
+      </button>
     </div>
   );
 };
 Blog.propTypes = {
   blog: PropTypes.object.isRequired,
+  handleAddToBookmark: PropTypes.func.isRequired,
+  handleMarkAsRead: PropTypes.func.isRequired,
 };
 export default Blog;
