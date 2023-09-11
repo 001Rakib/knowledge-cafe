@@ -1,0 +1,42 @@
+[
+  {
+    "ID": 12345,
+    "Cover": "https://i.ibb.co/zRsS2zD/1.jpg",
+    "Title": "The Enigmatic Mystery",
+    "Author": "Jane Smith",
+    "Author_img": "https://i.ibb.co/Sy66v9K/boy1.png",
+    "Posted_Date": "2023-09-05",
+    "Reading_Time": 25,
+    "Hashtags": ["#Mystery", "#Suspense", "#Thriller"]
+  },
+  {
+    "ID": 67890,
+    "Cover": "https://i.ibb.co/SKWzrJf/2.png",
+    "Title": "Lost in the Wilderness",
+    "Author": "John Doe",
+    "Author_img": "https://i.ibb.co/bHNtkMF/boy2.jpg",
+    "Posted_Date": "2023-09-08",
+    "Reading_Time": 40,
+    "Hashtags": ["#Adventure", "#Nature", "#Survival"]
+  },
+  {
+    "ID": 54321,
+    "Cover": "https://i.ibb.co/6W0h3Kp/3.png",
+    "Title": "A Culinary Journey",
+    "Author": "Emily Johnson",
+    "Author_img": "https://i.ibb.co/HTYwhFS/girl1.jpg",
+    "Posted_Date": "2023-09-02",
+    "Reading_Time": 15,
+    "Hashtags": ["#Foodie", "#Cuisine", "#Cooking"]
+  },
+  {
+    "ID": 98765,
+    "Cover": "https://i.ibb.co/QbHJ0s0/4.jpg",
+    "Title": "The Art of Innovation",
+    "Author": "David Williams",
+    "Author_img": "https://i.ibb.co/Kw0syxj/girl2.jpg",
+    "Posted_Date": "2023-09-11",
+    "Reading_Time": 30,
+    "Hashtags": ["#Innovation", "#Creativity", "#Business"]
+  }
+]
